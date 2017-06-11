@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Test</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="event-example">
+      <button @click="counter += 1">Add 1</button>
+      <p>The button above has been clicked {{ counter }} times.</p>
+    </div>
+    <div id="event-example-2">
+      <button @click="greet">Greet</button>
+    </div>
+    <div id="event-example-3">
+      <button @click="say('hi')">Say hi</button>
+      <button @click="say('what')">Say what</button>
+    </div>
+  </body>
+  <script src="./event.js"></script>
+</html>
