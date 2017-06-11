@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Test</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="condition-example">
+      <h1 v-if="ok">Yes</h1>
+      <h1 v-else>No</h1>
+      <div v-if="Math.random() > 0.5">
+        <span>Now you see me</span>
+      </div>
+      <div v-else>
+        <span>Now you don't</span>
+      </div>
+      <span v-show="ok">Hello!!!!</span>
+    </div>
+  </body>
+  <script src="./condition.js"></script>
+</html>
