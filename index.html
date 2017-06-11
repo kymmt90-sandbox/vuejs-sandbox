@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Test</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="example">
+      <p>
+        <span>{{ message | capitalize }}</span>
+      </p>
+      <p>
+        <span>{{ reversedMessage | capitalize }}</span>
+      </p>
+      <p>
+        <span>{{ number + 1 }}</span>
+      </p>
+      <p>
+        <span>{{ ok ? 'Yes' : 'No' }}</span>
+      </p>
+      <p :style="ok ? '' : 'display: none;'">
+        <span>Hi</span>
+      </p>
+      <p v-if="ok">
+        <span>Hello</span>
+      </p>
+      <p>
+        <a :href="url">Pepabo</a>
+      </p>
+    </div>
+    <div id="demo">{{ fullName }}</div>
+  </body>
+  <script src="./index.js"></script>
+</html>
