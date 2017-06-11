@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Test</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="form-example">
+      <textarea v-model="message" placeholder="edit me"></textarea>
+      <p style="whitei-space: pre-line">Message is: {{ message }}</p>
+      <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+      <label for="jack">Jack</label>
+      <input type="checkbox" id="john" value="John" v-model="checkedNames">
+      <label for="john">John</label>
+      <input type="checkbox" id="mike" value="Mike" v-model="checkedNames">
+      <label for="mike">Mike</label>
+      <br>
+      <span>{{ checkedNames }}</span>
+      <br>
+      <select v-model="selected">
+        <option v-for="option in options" :value="option.value">{{ option.text }}</option>
+      </select>
+      <br>
+      <span>{{ selected }}</span>
+    </div>
+  </body>
+  <script src="./form.js"></script>
+</html>
