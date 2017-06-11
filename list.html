@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Test</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <ul id="list-example">
+      <li v-for="(item, index) in items">{{ parentMessage }} - {{ index }} - {{ item.message }}</li>
+    </ul>
+    <ul id="repeat-object" class="demo">
+      <li v-for="(value, key) in object">{{ key }} : {{ value }}</li>
+    </ul>
+  </body>
+  <script src="./list.js"></script>
+</html>
