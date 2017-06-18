@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Test</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="example">
+      <input v-model="parentMessage">
+      <br>
+      <child :my-message="parentMessage"></child>
+    </div>
+  </body>
+  <script>
+   Vue.component('child', {
+     props: ['myMessage'],
+     template: '<span>{{ myMessage }}</span>',
+   })
+   new Vue({
+     el: '#example',
+     data: {
+       parentMessage: '',
+     },
+   })
+  </script>
+</html>
