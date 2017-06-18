@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vue Test</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="example">
+      <my-component></my-component>
+    </div>
+  </body>
+  <script>
+  Vue.component('my-component', {
+    template: '<div>A custom component!</div>',
+  });
+
+  new Vue({
+    el: '#example',
+  })
+  </script>
+</html>
